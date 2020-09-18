@@ -1,0 +1,34 @@
+#menu1{
+    background: rgb(red);
+    position: fixed;
+    top: 0;
+    width:100%;    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#sec1{
+    color: rosybrown;
+    background-image: url(https://www.avaong.com/AvaEducacion/IMG/fondo.png);
+    visibility: hidden;
+    background-size: 80%;
+
+    width: 1600px; height: 700px;
+}
+#sec2{
+   background-image: black;
+    
+   
+    width: 1600px; height: 700px;
+}
+#sec3{
+    background-image: url(https://www.avaong.com/AvaEducacion/IMG/fondo.png);
+    width: 1600px; height: 700px;
+    
+}
+body{
+  
+    background: rgba(39, 175, 39, 0.3); /* Green background with 30% opacity */
+    
+}
