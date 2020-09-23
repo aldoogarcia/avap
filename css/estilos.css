@@ -1,34 +1,141 @@
 #menu1{
     background: rgb(red);
     position: fixed;
-    top: 0;
-    width:100%;    
+    top: 3;
+    width:100%; 
+    z-index: 1;   
+}
+
+.men{
+    margin-top: 30px;
 }
 
 html{
     scroll-behavior: smooth;
-}
-#sec1{
-    color: rosybrown;
-    background-image: url(https://www.avaong.com/AvaEducacion/IMG/fondo.png);
-    visibility: hidden;
-    background-size: 80%;
-
-    width: 1600px; height: 700px;
-}
-#sec2{
-   background-image: black;
-    
    
-    width: 1600px; height: 700px;
+
+  
+}
+#sec1{   
+     background-image: url(https://www.avaong.com/AvaEducacion/IMG/sec2.png);
+ height: 700px;
+ color: rgb(239, 250, 246);
+    
+}
+
+
+#sec2{
+  background-image: url(https://www.avaong.com/AvaEducacion/IMG/sec2.png);
+   height: 800px;
 }
 #sec3{
-    background-image: url(https://www.avaong.com/AvaEducacion/IMG/fondo.png);
-    width: 1600px; height: 700px;
+    background-image: url(https://www.avaong.com/AvaEducacion/IMG/sec2.png);
+    height: 800px;
+    margin-top: auto;
+
+
     
 }
 body{
   
-    background: rgba(39, 175, 39, 0.3); /* Green background with 30% opacity */
+   color: white;
     
+}
+
+.pie{
+    background-image: black;
+}
+
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 2; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s; 
+  }
+  
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+ 
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+ 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+ 
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+* {box-sizing: border-box;}
+
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
 }
