@@ -33,34 +33,37 @@
               </article>
         </div>
           
-   <ol class="col col-md-2">
-    <div id="men">
+   <ol id="men" class="col col-md-2">
+     
+    <div class="puntos" >
       <a href="#sec1">
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg  width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
         </svg>
       </a>
     </div>
-    <div>
+    <div class="puntos">
       <a href="#sec2">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
         </svg>
       </a>
     </div>
-      <div>
-      <a href="#sec3">
+      <div class="puntos">
+        <a href="#sec3">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
         </svg>
       </a>
      </div>
-     <div>
+
+     <div class="puntos">
       <a href="#pie">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
         </svg>
       </a>
+      
      </div>
    </ol>
     </header>
@@ -78,66 +81,117 @@
       </div>  
    </section>
  <!--SECCION 2 ESCUELA ALUMNOS MAESTROS -->
-   <section class="row" id="sec2">
+   <section id="sec2">
+     <br><br><br>
+     
+    <article>
+    <h3  style="text-align: center;">Te ofrecemos</h3>
+    </article>
+
+    <section class="card-group">
+      <div class="col-md-1"></div>
     
-<div class="col-md-3 d-flex">
-  <img src="img/sec2.png" alt="">
-</div>
+      <div id="am" class="col-md-3 mt-5">
+        <img class="card-img-top" src="img/sec1.png" alt="">
+        <div class="card-body">
+          <h5 style="text-align: center;" class="card-title">ESCUELAS</h5>
+          <P style="text-align: center;" class="card-text">ocupas </P>
+        </div>
+      </div>
+      
+      <div id="am" class="col-md-3 mt-5">
+        <img class="card-img-top" src="img/sec1.png" alt="">
+        <div class="card-body">
+          <h5 style="text-align: center;" class="card-title">ALUMNOS</h5>
+          <P style="text-align: center;" class="card-text">ocupas </P>
+        </div>
+      </div>
+      
+      <div id="am" class="col-md-3 mt-5">
+        <img class="card-img-top" src="img/sec1.png" alt="">
+        <div class="card-body">
+          <h5 style="text-align: center;" class="card-title">PAGOS</h5>
+          <P style="text-align: center;" class="card-text">ocupas </P>
+        </div>
+      </div>
+    </section>
 
-<div id="1" class="col-md-3">
-  <img src="img/sec1.png" alt="">
-</div>
-
-<div  class="col-md-3">
-  <img src="img/sec2.png" alt="">
-</div>
    </section>
 <!--tERMINA SECCCION 2-->
 
 <!--INICIO DE SECCION 3 FORMULARIO-->
-   <section id="sec3" class="row">
-       <article class="col col-md-3 mt-5">
+<section id="sec3" >
+  <br><br>
+  <br><br>
+  <br><br>
+  <form method="POST" action="datform.php">
+    <h2 style="text-align: center;">Formulario</h2>
 
-       </article>
-    <form action="#" class="justify-content-sm-center col col-md-6 mt-5">
-        <h2 class="mt-5">Formulario</h2>
+    <div class="d-flex mt-5 justify-content-sm-center">
+      <div class="col-md-5">
         <div class="input-container">
           <i class="fa fa-user icon"></i>
-          <input class="input-field" type="text" placeholder="Nombre" name="usrnm">
+          <input class="input-field" 
+                 type="text" 
+                 placeholder="Nombre" 
+                 name="nombre"
+                 pattern="[a-zA-Z]{1,15}" 
+                 required 
+                 title="">
+          <i></i>
         </div>
-      
+
+        <div class="input-container">
+          <i class="fa fa-phone icon"></i>
+          <input class="input-field" type="tel" 
+                 placeholder="Telefono" 
+                 name="telefono" 
+                 pattern="[0-9]{1,15}"
+                 required 
+                 title="Asegurate que sean puros numeros"
+                 minlength="10" 
+                 maxlength="10"/> 
+                 
+                 
+        </div>
+
+        <div class="input-container">
+          <i class="fa fa-circle icon"></i>
+          <select class="input-field" name="interasado" id="sele" required>
+              <option value="seleciona">Interesado en</option>
+              <option value="Ventas,">Ventas</option>
+              <option value="Cursos">Cursos</option>
+              <option value="Libros">Libros Virtuales</option>
+              <option value="Partners">Partners</option>
+          </select>
+        </div>
+
+       </div>
+       
+       <div class="col-md-5">
+
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Apellidos" name="apellidos" required pattern="[a-z]{1,15}">
+        </div>
+        
         <div class="input-container">
           <i class="fa fa-envelope icon"></i>
-          <input class="input-field" type="text" placeholder="Email" name="email">
+          <input class="input-field" type="text" placeholder="Email" name="email" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
         </div>
       
         <div class="input-container">
-          <i class="fa fa-key icon"></i>
-          <input class="input-field" type="password" placeholder="Contraseña" name="psw">
+          <i class="fa fa-comment icon"></i>
+          <input class="input-field" type="text" placeholder="Escribe un comentario" name="coment">
         </div>
 
-        <div class="input-container">
-            <i class="fa fa-circle icon"></i>
-            <select class="input-field" name="" id="sele" >
-                <option value="seleciona">Selecciona una opccion</option>
-                <option value="Ventas,">Ventas</option>
-                <option value="Cursos">Cursos</option>
-                <option value="Libros">Libros Virtuales</option>
-                <option value="Partners">Partners</option>
-            </select>
-          </div>
-
-        <div class="input-container">
-            <i class="fa fa-option icon"></i>
-            <input class="input-field" type="" placeholder="Escribe un comentario" name="coment">
-          </div>
-
-         
-      
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    
-   </section>
+       </div>
+    </div>
+    <div class="justify-content-sm-center">
+      <button type="submit" class="btn" style="width: 70%;">Enviar</button>
+    </div>
+  </form>
+</section>
 <!--TERMINO DE SECCION 3-->
 
 <!--INICIO DEL PIE DE PAGINA-->
